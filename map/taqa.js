@@ -1,4 +1,4 @@
-// Load the map 
+// Load the map
 var map = L.mapbox.map('map', 'robertocarroll.taqa-2', {
 
     center: [25, -15],
@@ -16,8 +16,8 @@ var grid = L.mapbox.gridLayer('robertocarroll.taqa');
 grid.addTo(map);
 
 grid
-    .on('mousemove',function(o) {
-        document.getElementById('info').innerHTML = (o.data.scalerank);
-    }).on('mouseout', function(o) {
+    .on('click',function(evt) {
+        document.getElementById('info').innerHTML = (evt.data.NAME);
+    }).on('mouseout', function(evt) {
         document.getElementById('info').innerHTML = '';
     });

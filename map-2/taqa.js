@@ -1,16 +1,6 @@
 
-// Load the geojson data from a file
-
-var geoJsonData;
-$.getJSON('taqa.geojson', function(data) {
-    geoJsonData = data;
-
-   
-
-
 // Load the map
 var map = L.mapbox.map('map', 'robertocarroll.taqa-3', {
-
     center: [25, -15],
     zoom: 2,
     minZoom: 2,
@@ -18,14 +8,75 @@ var map = L.mapbox.map('map', 'robertocarroll.taqa-3', {
     maxBounds: [[-85, -180.0],[85, 180.0]]
 });
 
+// Load the geojson data from a file
 
-// Add a marker layer
-var mainMarkers = L.mapbox.markerLayer();
+var geoJsonData;
+$.getJSON('taqa.geojson', function(data) {
+        geoJsonData = data;
+       
+    // Add a marker layer
+    var mainMarkers = L.mapbox.featureLayer().addTo(map);
 
-// set the lat/lon for marker layer
-mainMarkers.setGeoJSON(geoJsonData);
+    // set the lat/lon for marker layer
+    mainMarkers.setGeoJSON(geoJsonData);
 
-map.addLayer(mainMarkers);
+    // Listen for individual marker clicks
+    mainMarkers.on('click',function(e) {
+        // Force the popup closed.
+        e.layer.closePopup();
+
+        var feature = e.layer.feature;
+        var info = '<h2>' + feature.properties.title + '</h2>';
+
+        $('#info').hide().html(info).fadeIn('slow');
+    });
+
+
+
+    var clicked;
+
+     $(".toggle").click(function(event) {
+        
+        clicked = event.target.id;
+               
+        $(".toggle").removeClass('active');
+         $(this).addClass('active');
+        // The setFilter function takes a GeoJSON feature object
+        // and returns true to show it or false to hide it.
+
+        mainMarkers.setFilter(function(geoJsonData) {
+
+            if (clicked == "filter-all") {
+                return true;
+            }
+
+            else {
+
+                if (clicked === 'office') {
+                    return geoJsonData.properties['type'] === 'office';
+                }
+
+                if (clicked === 'energy') {
+                    return geoJsonData.properties['type'] === 'energy';
+                }
+
+                 if (clicked === 'power-water') {
+                    return geoJsonData.properties['type'] === 'power-water';
+                }
+
+                 if (clicked === 'oil-gas') {
+                    return geoJsonData.properties['type'] === 'oil-gas';
+                }
+                               
+                
+
+            }
+            
+        });
+
+        return false;
+
+    });
 
 
 }); // close the loading of the geojson 

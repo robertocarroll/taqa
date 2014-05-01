@@ -3,7 +3,12 @@
   "features": [
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "Jorf Lasfar Power Plant",
+        "country": "Morocco",
+        "type": "power-water"
+
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -14,7 +19,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "Takoradi Power Plant",
+        "country": "Ghana",
+        "type": "power-water"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -25,7 +34,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "Red Oak Power Plant",
+        "country": "United States",
+        "type": "power-water" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -36,7 +49,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "Lakefield Wind Project",
+        "country": "United States",
+        "type": "energy" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -47,7 +64,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "TAQA North",
+        "country": "Canada",
+        "type": "office" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -58,7 +79,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "Neyveli Power Plant",
+        "country": "India",
+        "type": "power-water" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -69,7 +94,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "Himachal Pradesh Hydro Project",
+        "country": "India",
+        "type": "energy" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -80,7 +109,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "TAQA Energy",
+        "country": "Netherlands",
+        "type": "office" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -91,7 +124,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "TAQA Bratani",
+        "country": "United Kingdom",
+        "type": "office" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -102,7 +139,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "Jubail Power Plant",
+        "country": "Saudi Arabia",
+        "type": "power-water"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -113,7 +154,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "Sulaymaniyah Power Plant",
+        "country": "Iraq",
+        "type": "power-water"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -124,7 +169,11 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+         "title": "Atrush",
+        "country": "Iraq",
+        "type": "oil-gas"
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -135,7 +184,9 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "marker 13" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -146,7 +197,9 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "marker 14" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -157,7 +210,9 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "marker 15" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -168,7 +223,9 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "marker 16" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -179,7 +236,9 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "marker 17" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [
@@ -190,7 +249,9 @@
     },
     {
       "type": "Feature",
-      "properties": {},
+      "properties": {
+        "title": "marker 18" 
+      },
       "geometry": {
         "type": "Point",
         "coordinates": [

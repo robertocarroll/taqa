@@ -8,6 +8,8 @@ var map = L.mapbox.map('map', 'robertocarroll.taqa-3', {
     maxBounds: [[-85, -180.0],[85, 180.0]]
 });
 
+map.zoomControl.setPosition('bottomright');
+
 // Load the geojson data from a file
 
 var geoJsonData;
@@ -20,52 +22,72 @@ $.getJSON('taqa.geojson', function(data) {
     // set the lat/lon for marker layer
     mainMarkers.setGeoJSON(geoJsonData);
 
-    // Listen for individual marker clicks
-    mainMarkers.on('click',function(e) {
+
+
+// Marker clicks: Listen for individual marker clicks
+
+
+
+mainMarkers.on('click',function(e) {
         // Force the popup closed.
         e.layer.closePopup();
 
+        
+        $.when(closeWindow()).then(openWindow());
+
         var feature = e.layer.feature;
         var info = '<h2>' + feature.properties.title + '</h2>';
-
+    
         $('#info').hide().html(info).fadeIn('slow');
+
     });
 
 
+var closeWindow = function(){
+    $('#close-button a')[0].click();
+}   
 
-     // Filters 
-     
-    var clicked;
-    var geoProperties;
+var openWindow = function(){
+    $('#trigger a')[0].click();
+}       
 
-     $(".toggle").click(function(event) {
+map.on('click', closeWindow);
+
+ // Filters 
+
+var clicked;
+var geoProperties;
+
+ $(".toggle").click(function(event) {
+
+    closeWindow();
+    
+    clicked = event.target.id;
+           
+    $(".toggle").removeClass('active');
+     $(this).addClass('active');
+    // The setFilter function takes a GeoJSON feature object
+    // and returns true to show it or false to hide it.
+
+    mainMarkers.setFilter(function(geoJsonData) {
+
+        if (clicked == "filter-all") {
+            return true;
+        }
+
+        else {
+
+            geoProperties = geoJsonData.properties['type'];
+
+            return geoProperties === clicked;
+
+        }
         
-        clicked = event.target.id;
-               
-        $(".toggle").removeClass('active');
-         $(this).addClass('active');
-        // The setFilter function takes a GeoJSON feature object
-        // and returns true to show it or false to hide it.
-
-        mainMarkers.setFilter(function(geoJsonData) {
-
-            if (clicked == "filter-all") {
-                return true;
-            }
-
-            else {
-
-                geoProperties = geoJsonData.properties['type'];
-
-                return geoProperties === clicked;
-
-            }
-            
-        });
-
-        return false;
-
     });
+
+    return false;
+
+});
 
 
 }); // close the loading of the geojson 

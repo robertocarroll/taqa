@@ -16,9 +16,12 @@
 
  <script src='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.js'></script>
 <link href='http://api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.css' rel='stylesheet' />
+
 <!--[if lte IE 8]>
 <link href='//api.tiles.mapbox.com/mapbox.js/v1.6.1/mapbox.ie.css' rel='stylesheet'>
 <![endif]-->
+
+<link href='https://www.mapbox.com/base/latest/base.css' rel='stylesheet' />
 
 </head>
 <body>
@@ -33,14 +36,26 @@
         
     </ul>
 </div>
-   
-    <div id="map"></div>
 
-    <div id="info">
-      <h2>TAQA</h2>
-        <p>test</p>
-      </div>
+     
+     
+  <div id="map"></div>
 
+  <div id="trigger">
+    <a href='#pop'></a>
+  </div>
+  
+    
+    <div id='pop' class='col4 pad2 fill-darken2 pin-left offcanvas-left animate'>
+      
+     <div id="close-button"> 
+      <a href='#' class='fill-darken2 pad1 icon close'></a>
+     </div>
+
+       <div id="info"></div>
+    
+    </div>
+  
   <script src="taqa.js"></script>
 
 </body>

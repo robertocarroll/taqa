@@ -33,7 +33,10 @@ $.getJSON('taqa.geojson', function(data) {
 
 
 
+     // Filters 
+     
     var clicked;
+    var geoProperties;
 
      $(".toggle").click(function(event) {
         
@@ -52,23 +55,9 @@ $.getJSON('taqa.geojson', function(data) {
 
             else {
 
-                if (clicked === 'office') {
-                    return geoJsonData.properties['type'] === 'office';
-                }
+                geoProperties = geoJsonData.properties['type'];
 
-                if (clicked === 'energy') {
-                    return geoJsonData.properties['type'] === 'energy';
-                }
-
-                 if (clicked === 'power-water') {
-                    return geoJsonData.properties['type'] === 'power-water';
-                }
-
-                 if (clicked === 'oil-gas') {
-                    return geoJsonData.properties['type'] === 'oil-gas';
-                }
-                               
-                
+                return geoProperties === clicked;
 
             }
             

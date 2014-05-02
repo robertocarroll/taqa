@@ -4,11 +4,12 @@ var map = L.mapbox.map('map', 'robertocarroll.taqa-3', {
     center: [25, -15],
     zoom: 2,
     minZoom: 2,
-    maxZoom: 5,
+    maxZoom: 4,
     maxBounds: [[-85, -180.0],[85, 180.0]]
 });
 
 map.zoomControl.setPosition('bottomright');
+map.scrollWheelZoom.disable();
 
 // Load the geojson data from a file
 

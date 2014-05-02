@@ -136,6 +136,22 @@
           57.155623
         ]
       }
+    }
+    ,
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "TAQA North Africa",
+        "country": "Morocco",
+        "type": "office" 
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          -7.658316,
+          33.515561
+        ]
+      }
     },
     {
       "type": "Feature",
@@ -185,7 +201,24 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "marker 13" 
+        "title": "TAQA Atrush",
+        "country": "Iraq",
+        "type": "office" 
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          36.191111,
+          44.009167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "Sohar Aluminium Power Plant",
+        "country": "Oman",
+        "type": "power-water" 
       },
       "geometry": {
         "type": "Point",
@@ -198,7 +231,9 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "marker 14" 
+        "title": "Abu Dhabi National Energy Company PJSC (TAQA) Headquarters",
+        "country": "United Arab Emirates",
+        "type": "office"  
       },
       "geometry": {
         "type": "Point",
@@ -211,7 +246,9 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "marker 15" 
+        "title": "Shuweihat Power and Desalination Plant",
+        "country": "United Arab Emirates",
+        "type": "power-water"
       },
       "geometry": {
         "type": "Point",
@@ -224,7 +261,9 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "marker 16" 
+        "title": "Taweelah A1 Power and Desalination Plant",
+        "country": "United Arab Emirates",
+        "type": "power-water" 
       },
       "geometry": {
         "type": "Point",
@@ -237,7 +276,9 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "marker 17" 
+        "title": "Umm Al Nar Power and Desalination Plant",
+        "country": "United Arab Emirates",
+        "type": "power-water" 
       },
       "geometry": {
         "type": "Point",
@@ -250,7 +291,9 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "marker 18" 
+        "title": "Waste-to-energy Plant",
+        "country": "United Arab Emirates",
+        "type": "energy"
       },
       "geometry": {
         "type": "Point",

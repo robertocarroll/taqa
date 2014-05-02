@@ -298,6 +298,20 @@
           24.342
         ]
       }
+    },{
+      "type": "Feature",
+      "properties": {
+        "title": "Power plants and desalination plants",
+        "country": "United Arab Emirates",
+        "type": "power-water"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          54.644622802734375,
+          24.58833910753816
+        ]
+      }
     },
     {
       "type": "Feature",

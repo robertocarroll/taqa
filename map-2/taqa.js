@@ -14,6 +14,7 @@ map.scrollWheelZoom.disable();
 // Load the geojson data from a file
 
 var geoJsonData;
+
 $.getJSON('taqa.geojson', function(data) {
         geoJsonData = data;
        
@@ -27,7 +28,8 @@ $.getJSON('taqa.geojson', function(data) {
 
 // Marker clicks: Listen for individual marker clicks
 
-
+var clicked = "office";
+var geoProperties;
 
 mainMarkers.on('click',function(e) {
         // Force the popup closed.
@@ -56,8 +58,16 @@ map.on('click', closeWindow);
 
  // Filters 
 
-var clicked;
-var geoProperties;
+var setTheFilter = function(){
+    mainMarkers.setFilter(function(geoJsonData) {
+
+            geoProperties = geoJsonData.properties['type'];
+            return geoProperties === clicked;
+        
+    });
+
+    return false;
+}   
 
  $(".toggle").click(function(event) {
 
@@ -70,25 +80,10 @@ var geoProperties;
     // The setFilter function takes a GeoJSON feature object
     // and returns true to show it or false to hide it.
 
-    mainMarkers.setFilter(function(geoJsonData) {
-
-        if (clicked == "filter-all") {
-            return true;
-        }
-
-        else {
-
-            geoProperties = geoJsonData.properties['type'];
-
-            return geoProperties === clicked;
-
-        }
-        
-    });
-
-    return false;
+    setTheFilter ();
 
 });
 
+setTheFilter ();
 
 }); // close the loading of the geojson 

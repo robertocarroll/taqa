@@ -6,7 +6,9 @@
       "properties": {
         "title": "Jorf Lasfar Power Plant",
         "country": "Morocco",
-        "type": "power-water"
+        "description": "",
+        "type": "power-water",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -21,7 +23,9 @@
       "properties": {
         "title": "Takoradi Power Plant",
         "country": "Ghana",
-        "type": "power-water"
+        "description": "",
+        "type": "power-water",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -36,7 +40,9 @@
       "properties": {
         "title": "TAQA Generation International Operating Co. LLC",
         "country": "Ghana",
-        "type": "office"
+        "description": "<p>TAQA operates a 220 MW simple-cycle power plant located at Takoradi, 220km west of Accra. <a href='#'>Find out more</a></p><ul><li><a href='#'>News</a></li><li><a href='#'>Jobs</a></li><li><a href='#'>Contacts</a></li></ul>",
+        "type": "office",
+        "image": "<img class='top-image' src='images/ghana.jpg' width='100%'>"
       },
       "geometry": {
         "type": "Point",
@@ -51,7 +57,9 @@
       "properties": {
         "title": "Red Oak Power Plant",
         "country": "United States",
-        "type": "power-water"
+        "description": "",
+        "type": "power-water",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -66,7 +74,9 @@
       "properties": {
         "title": "Lakefield Wind Project",
         "country": "United States",
-        "type": "energy"
+        "description": "",
+        "type": "energy",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -80,8 +90,10 @@
       "type": "Feature",
       "properties": {
         "title": "TAQA North Ltd",
-        "country": "Canada",
-        "type": "office"
+        "country": "North America",
+        "description": "<p>TAQA’s North American oil and gas business is headquartered in Calgary, Canada and focused on conventional oil and gas exploration and production. In the United States, TAQA has oil and gas interests in three North Western states. It also has interests in power generation through a gas-fired power station tolling agreement on the East coast and a Mid-West wind farm. <a href='#'>Find out more</a></p><ul><li><a href='#'>News</a></li><li><a href='#'>Jobs</a></li><li><a href='#'>Contacts</a></li></ul>",
+        "type": "office",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -96,7 +108,9 @@
       "properties": {
         "title": "Neyveli Power Plant",
         "country": "India",
-        "type": "power-water"
+        "description": "",
+        "type": "power-water",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -111,7 +125,9 @@
       "properties": {
         "title": "ST-CMS Electric Company Pvt Ltd ",
         "country": "India",
-        "type": "office"
+        "description": "<p>TAQA owns and operates a 250 MW lignite-fired power plant in the state of Tamil Nadu. In India TAQA also has a majority interest in a 100 MW hydro-electric plant at Sorang, and plans to acquire interests in the Baspa Stage II and Karcham Wangtoo plants, which have a joint capacity of 1,391 MW. All three plants are in the northern state of Himachal Pradesh. <a href='#'>Find out more</a></p><ul><li><a href='#'>News</a></li><li><a href='#'>Jobs</a></li><li><a href='#'>Contacts</a></li></ul>",
+        "type": "office",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -126,7 +142,9 @@
       "properties": {
         "title": "Himachal Pradesh Hydro Project",
         "country": "India",
-        "type": "energy"
+        "description": "",
+        "type": "energy",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -141,7 +159,9 @@
       "properties": {
         "title": "TAQA Energy BV",
         "country": "Netherlands",
-        "type": "office"
+        "description": "",
+        "type": "office",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -156,7 +176,9 @@
       "properties": {
         "title": "TAQA Bratani Limited",
         "country": "United Kingdom",
-        "type": "office"
+        "description": "",
+        "type": "office",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -171,7 +193,9 @@
       "properties": {
         "title": "TAQA North Africa",
         "country": "Morocco",
-        "type": "office"
+        "description": "",
+        "type": "office",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -186,7 +210,9 @@
       "properties": {
         "title": "Jubail Power Plant",
         "country": "Saudi Arabia",
-        "type": "power-water"
+        "description": "",
+        "type": "power-water",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -201,7 +227,9 @@
       "properties": {
         "title": "Sulaymaniyah Power Plant",
         "country": "Iraq",
-        "type": "power-water"
+        "description": "",
+        "type": "power-water",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -216,7 +244,9 @@
       "properties": {
         "title": "Oil and gas exploration and production",
         "country": "United Kingdom",
-        "type": "oil-gas"
+        "description": "",
+        "type": "oil-gas",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -230,7 +260,9 @@
       "properties": {
         "title": "Oil and gas exploration and production",
         "country": "United States",
-        "type": "oil-gas"
+        "description": "",
+        "type": "oil-gas",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -244,7 +276,9 @@
       "properties": {
         "title": "Gas Storage Bergermeer and Gas Storage Peak Gas Installation (PGI) Alkmaar",
         "country": "Netherlands",
-        "type": "oil-gas"
+        "description": "",
+        "type": "oil-gas",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -259,7 +293,9 @@
       "properties": {
         "title": "Atrush",
         "country": "Iraq",
-        "type": "oil-gas"
+        "description": "",
+        "type": "oil-gas",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -274,7 +310,9 @@
       "properties": {
         "title": "TAQA Atrush BV",
         "country": "Iraq",
-        "type": "office"
+        "description": "",
+        "type": "office",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -289,7 +327,9 @@
       "properties": {
         "title": "Sohar Aluminium Power Plant",
         "country": "Oman",
-        "type": "power-water"
+        "description": "",
+        "type": "power-water",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -303,7 +343,9 @@
       "properties": {
         "title": "Power plants and desalination plants",
         "country": "United Arab Emirates",
-        "type": "power-water"
+        "description": "",
+        "type": "power-water",
+        "image": ""
       },
       "geometry": {
         "type": "Point",
@@ -318,7 +360,9 @@
       "properties": {
         "title": "Abu Dhabi National Energy Company PJSC (TAQA) Headquarters",
         "country": "United Arab Emirates",
-        "type": "office"
+        "description": "",
+        "type": "office",
+        "image": ""
       },
       "geometry": {
         "type": "Point",

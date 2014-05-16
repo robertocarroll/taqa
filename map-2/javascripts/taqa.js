@@ -1,15 +1,15 @@
 
 // Load the map
 var map = L.mapbox.map('map', 'robertocarroll.taqa-3', {
-    center: [25, -15],
+    center: [0, 25],
     zoom: 2,
     minZoom: 2,
     maxZoom: 4,
-    maxBounds: [[-85, -180.0],[85, 180.0]]
+    maxBounds: [[-85, -200.0],[85, 200.0]]
 });
 
 // Customise some features
-map.zoomControl.setPosition('bottomright');
+map.zoomControl.setPosition('topleft');
 map.scrollWheelZoom.disable();
 
 // Load the geojson data from a file
@@ -31,10 +31,8 @@ loadGeoJson.complete(function() {
 // Create a custom icon for the main
 var LeafIcon = L.Icon.extend({
                 options: {                   
-                    iconSize:     [32, 43],
-                    shadowSize:   [32, 43],
-                    iconAnchor:   [22, 42],
-                    shadowAnchor: [22, 42],
+                    iconSize:     [24, 24],
+                    iconAnchor:   [12, 12],
                     className: 'taqa-custom-icon'
                 }
             });
@@ -83,10 +81,11 @@ mainMarkers.on('click',function(e) {
      $.when(closeWindow()).then(openWindow());
 
     var feature = e.layer.feature;
-    var info =           feature.properties.image +
+    var info =    '<div class="' + feature.properties.type + '">' +
+                       feature.properties.image +
                 '<h2>' + feature.properties.country + '</h2>' +
                 '<h3 >' + feature.properties.title + '</h3>' +
-                feature.properties.description;
+                feature.properties.description + '</div>'; 
 
     $('#info').hide().html(info).fadeIn('slow');
 
@@ -96,18 +95,26 @@ mainMarkers.on('click',function(e) {
 
 
 var closeWindow = function(){
-    $("#pop").css({ left: '-100%'});
+    $("#pop").css({ right: '-100%'});
+
 }   
 
 var openWindow = function(){
     $( "#pop" ).animate({
-          left: 0
+          right: 0
           }, 125, function() {
             // Animation complete.
           });
 }       
 
-map.on('click', closeWindow);
+
+
+map.on('click',function(e) {
+    closeWindow();
+    resetMarkers();
+    map.setView(new L.LatLng(25, 25), 2);
+});
+
 
 // Filters 
 var setTheFilter = function(){
@@ -117,6 +124,8 @@ var setTheFilter = function(){
         return geoProperties === clicked;
         
     });
+
+    map.setView(new L.LatLng(25, 25), 2);
 
     return false;
 }   

@@ -7,7 +7,7 @@
         "title": "Jorf Lasfar Power Plant",
         "country": "Morocco",
         "description": "",
-        "type": "power-water",
+        "type": "power",
         "image": ""
       },
       "geometry": {
@@ -24,7 +24,7 @@
         "title": "Takoradi Power Plant",
         "country": "Ghana",
         "description": "",
-        "type": "power-water",
+        "type": "power",
         "image": ""
       },
       "geometry": {
@@ -40,7 +40,7 @@
       "properties": {
         "title": "TAQA Generation International Operating Co. LLC",
         "country": "Ghana",
-        "description": "<p>TAQA operates a 220 MW simple-cycle power plant located at Takoradi, 220km west of Accra. <a href='#'>Find out more</a></p><ul><li><a href='#'>News</a></li><li><a href='#'>Jobs</a></li><li><a href='#'>Contacts</a></li></ul>",
+        "description": "<p>TAQA operates a 220 MW simple-cycle power plant located at Takoradi, 220km west of Accra.</p><ul><li><a href='#'>Overview</a></li><li><a href='#'>News</a></li><li><a href='#'>Jobs</a></li><li><a href='#'>Contacts</a></li></ul>",
         "type": "office",
         "image": "<img class='top-image' src='images/ghana.jpg' width='100%'>"
       },
@@ -58,7 +58,7 @@
         "title": "Red Oak Power Plant",
         "country": "United States",
         "description": "",
-        "type": "power-water",
+        "type": "power",
         "image": ""
       },
       "geometry": {
@@ -328,7 +328,7 @@
         "title": "Sohar Aluminium Power Plant",
         "country": "Oman",
         "description": "",
-        "type": "power-water",
+        "type": "power",
         "image": ""
       },
       "geometry": {
@@ -344,7 +344,7 @@
         "title": "Power plants and desalination plants",
         "country": "United Arab Emirates",
         "description": "",
-        "type": "power-water",
+        "type": "water",
         "image": ""
       },
       "geometry": {

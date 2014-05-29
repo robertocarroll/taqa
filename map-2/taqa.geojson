@@ -334,8 +334,8 @@
       "geometry": {
         "type": "Point",
         "coordinates": [
-          56.729889,
-          24.342
+          57.81005859375,
+          24.086589258228027
         ]
       }
     },{
@@ -352,6 +352,22 @@
         "coordinates": [
           54.644622802734375,
           24.58833910753816
+        ]
+      }
+    },{
+      "type": "Feature",
+      "properties": {
+        "title": "Power generation facilities",
+        "country": "United Arab Emirates",
+        "description": "<p>TAQA has eight operational power generation and desalination facilities across the UAE with a total power generation capacity of 12,497 MW.</p><ul><li><a href='#'>Find out more</a></li></ul>",
+        "type": "power",
+        "image": "<img class='top-image' src='images/power-uae.jpg'>"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          53.78906249999999,
+          23.725011735951796
         ]
       }
     },

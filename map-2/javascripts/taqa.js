@@ -1,16 +1,22 @@
 
 // Load the map
 var map = L.mapbox.map('map', 'robertocarroll.taqa-3', {
-    center: [0, 25],
-    zoom: 2,
     minZoom: 2,
     maxZoom: 4,
-    maxBounds: [[-85, -200.0],[85, 200.0]]
+    maxBounds: [[-85, -190.0],[85, 190.0]],
+    doubleClickZoom: false
 });
 
 // Customise some features
 map.zoomControl.setPosition('topleft');
 map.scrollWheelZoom.disable();
+
+
+map.on('dblclick', function(e) {
+    // Zoom exactly to each double-clicked point
+    map.setView(e.latlng, map.getZoom() + 1);
+});
+
 
 // Load the geojson data from a file
 var geoJsonData;
@@ -31,8 +37,8 @@ loadGeoJson.complete(function() {
 // Create a custom icon for the main
 var LeafIcon = L.Icon.extend({
                 options: {                   
-                    iconSize:     [24, 24],
-                    iconAnchor:   [12, 12],
+                    iconSize:     [32, 32],
+                    iconAnchor:   [16, 16],
                     className: 'taqa-custom-icon'
                 }
             });
@@ -82,7 +88,7 @@ mainMarkers.on('click',function(e) {
 
     var feature = e.layer.feature;
     var info =    '<div class="' + feature.properties.type + '">' +
-                       feature.properties.image +
+                       '<div class="top-image-container">'+ feature.properties.image + '<img class="imtip" src="images/' + feature.properties.type + '-off.png">' + '</div>' +
                 '<h2>' + feature.properties.country + '</h2>' +
                 '<h3 >' + feature.properties.title + '</h3>' +
                 feature.properties.description + '</div>'; 
@@ -107,12 +113,9 @@ var openWindow = function(){
           });
 }       
 
-
-
-map.on('click',function(e) {
-    closeWindow();
+$('.close').click(function(){
     resetMarkers();
-    map.setView(new L.LatLng(25, 25), 2);
+    closeWindow();
 });
 
 
@@ -125,11 +128,10 @@ var setTheFilter = function(){
         
     });
 
-    map.setView(new L.LatLng(25, 25), 2);
+    map.setView(new L.LatLng(25, 0), 2);
 
     return false;
 }   
-
 
 $(".toggle").click(function(event) {
 
@@ -146,6 +148,5 @@ $(".toggle").click(function(event) {
     setTheFilter ();
 
 });
-
 
 setTheFilter ();
